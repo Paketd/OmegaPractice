@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/users_db
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    view:
+      prefix: /static/
+      suffix: .html
+
+testing:
+  app:
+    secret: efz43t4eg34h2q53hq6n87
+    lifetime: 60000
+
